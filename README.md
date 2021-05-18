@@ -10,6 +10,7 @@ Para este teste utilize o seguinte dataset, considerando os arquivos listados a 
 
 |	conteudo	|
 | id_conteudo | conteudo | categoria |
+| ------ | ------ | ------ |
 | 10406 | A | novela |
 | 10352 | B | serie |
 | 10206 | C | novela |
@@ -17,7 +18,8 @@ Para este teste utilize o seguinte dataset, considerando os arquivos listados a 
 
 
 |	consumo	|
-| id_user | id_conteudo	data | horas_consumidas |
+| id_user | id_conteudo | data | horas_consumidas |
+| ------ | ------ | ------ | ------ |
 | 150 | 10406 | 07/07/2019 | 0,27 |
 | 139 | 10352 | 24/11/2019 | 0,59 |
 | 182 | 10206 | 26/07/2019 | 0,82 |
