@@ -8,7 +8,7 @@ Este teste tem o objetivo de avaliar a capacidade do candidato em realizar trata
 Para este teste utilize o seguinte dataset, considerando os arquivos listados a seguir, enviados junto a este teste:
 * Teste Analista BI.XLSX
 
-|	conteudo	|
+"conteudo"
 | id_conteudo | conteudo | categoria |
 | ------ | ------ | ------ |
 | 10406 | A | novela |
@@ -17,7 +17,7 @@ Para este teste utilize o seguinte dataset, considerando os arquivos listados a 
 | 10835 | D | serie |
 
 
-|	consumo	|
+"consumo"
 | id_user | id_conteudo | data | horas_consumidas |
 | ------ | ------ | ------ | ------ |
 | 150 | 10406 | 07/07/2019 | 0,27 |
