@@ -2,7 +2,7 @@
 Teste Técnico - [Analista de Qualidade de Dados SR / Cientista de Dados III](https://site.vagas.com.br/PagVagaDirSS.asp?v=2198715) - [Rede Globo](http://vempraglobo.com.br/)
 
 ## Objetivo
-Este teste tem o objetivo de avaliar a capacidade do candidato em realizar tratamentos em bases de dados.
+Este teste tem o objetivo de avaliar a capacidade do candidato em realizar consultas em bases de dados.
 
 ## Bases
 Para este teste utilize o seguinte dataset, considerando os arquivos listados a seguir, enviados junto a este teste:
