@@ -109,4 +109,36 @@ LEFT JOIN (
 ORDER BY  play.id_user
 
 -- Conte uma história com os dados! Não precisa ser nada complexo. O objetivo é entendermos como você lida com informações e as analisa.
+SELECT 
+	coalesce(c.categoria, 'não definida') as categoria,
+	sum(((horas * 60) + minutos))/count(play.id_user) as media_de_minutos
+FROM (
+  SELECT
+    id_user,
+    id_conteudo,
+    to_char(consumo.data, 'dd/mm/yyyy') as data,
+  	horas_consumidas,
+    cast(horas_consumidas as character varying(10)) as str_horas_consumidas,
+    cast(substr(cast(horas_consumidas as character varying(10)), 1, strpos(cast(horas_consumidas as character varying(10)), '.')-1) as integer) as horas,
+    cast(substr(cast(horas_consumidas as character varying(10)), strpos(cast(horas_consumidas as character varying(10)), '.')+1, length(cast(horas_consumidas as character varying(10)))) as integer) as minutos
+  FROM public.consumo
+) as play
+LEFT JOIN public.conteudo c on c.id_conteudo = play.id_conteudo
+GROUP BY  categoria
+ORDER BY  categoria
 
+SELECT 
+	max(((horas * 60) + minutos)) as maximo_minutos,
+	min(((horas * 60) + minutos)) as minimo_minutos
+FROM (
+  SELECT
+    id_user,
+    id_conteudo,
+    to_char(consumo.data, 'dd/mm/yyyy') as data,
+  	horas_consumidas,
+    cast(horas_consumidas as character varying(10)) as str_horas_consumidas,
+    cast(substr(cast(horas_consumidas as character varying(10)), 1, strpos(cast(horas_consumidas as character varying(10)), '.')-1) as integer) as horas,
+    cast(substr(cast(horas_consumidas as character varying(10)), strpos(cast(horas_consumidas as character varying(10)), '.')+1, length(cast(horas_consumidas as character varying(10)))) as integer) as minutos
+  FROM public.consumo
+) as play
+LEFT JOIN public.conteudo c on c.id_conteudo = play.id_conteudo
