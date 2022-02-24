@@ -7,6 +7,11 @@ Este teste tem o objetivo de avaliar a capacidade do candidato em realizar consu
 ## Resultados:
 [Apresentação de Respostas](/UakitiPires.pdf) 
 
+[Código de Importação de Dados](/importacao.sql) 
+
+[Código das Consultas](/perguntas.sql) 
+
+
 
 ## Bases:
 Para este teste utilize o seguinte dataset, considerando os arquivos listados a seguir, enviados junto a este teste:
