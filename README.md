@@ -1,10 +1,14 @@
 # Rede Globo
 Teste Técnico - [Analista de Qualidade de Dados SR / Cientista de Dados III](https://site.vagas.com.br/PagVagaDirSS.asp?v=2198715) - [Rede Globo](http://vempraglobo.com.br/)
 
-## Objetivo
+## Objetivo:
 Este teste tem o objetivo de avaliar a capacidade do candidato em realizar consultas em bases de dados.
 
-## Bases
+## Resultados:
+[Apresentação de Respostas](/UakitiPires.pdf) 
+
+
+## Bases:
 Para este teste utilize o seguinte dataset, considerando os arquivos listados a seguir, enviados junto a este teste:
 * Teste Analista BI.XLSX
 
@@ -49,7 +53,7 @@ Para este teste utilize o seguinte dataset, considerando os arquivos listados a 
 **Obs:** (considere cada linha da tabela "consumo" como um play no conteúdo)
 
 
-## Perguntas
+## Perguntas:
 A partir das tabelas acima, escreve o código para responder as perguntas abaixo: 
 1. Quantidade de horas consumidas e plays por categoria 
 2. Ranking de novelas com mais horas consumidas por mês 
